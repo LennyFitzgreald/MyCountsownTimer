@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:keepScreenOn="true">
+
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/playStop" android:tint="@android:color/white" app:elevation="0dp"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/timerText" tools:text="3:00"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textSize="150dp"
+            android:textColor="@color/colorAccent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/playStop"/>
+</android.support.constraint.ConstraintLayout>
